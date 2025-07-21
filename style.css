@@ -204,14 +204,6 @@ span {
     background-color: #f9f9ff;
 }
 
-.visi-misi-image img {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
 .visi-misi-box h3 {
     color: #4f46e5;
     margin-bottom: 10px;
