@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: skyblue;
+  height: 100%;
+
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: blue;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+    
+}
+
+nav .nav-image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .nav-image img {
+  width: 80px;
+}
+
+nav .nav-image h4 {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: 0.3s;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+nav ul li a:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+/* ini hamburger saya */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+span {
+  font-weight: bold;
+}
+
+
+.intro{
+  width: 60%;
+  margin: auto;
+}
+
+.parent {
+  width: 540px;
+  height: 540px;
+  background-color: white;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin: 50px auto;
+}
+
+
+.video-container{
+  height: 500px;
+  width: 500px;
+  margin: 50px auto;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.intro .text-intro{
+  padding-block: 2rem;
+  text-align: center;
+}
+
+.intro .text-intro h2{
+  font-size: 35px
+   
+}
+
+.intro .text-intro p {
+  font-size: 18px;
+  font-weight: 300;
+  padding-block: 1.5rem;
+    
+}
+
+.about-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+      
+ }
+
+.toga {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.toga img {
+  width: 60px; 
+  height: auto;
+}
+
+.toga h3 {
+  font-size: 24px;
+  margin: 0;
+ }
+
+ .about-you p {
+  max-width: 700px;
+  line-height: 1.6;
+  text-align: justify;
+ }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 50px;
+}
+.departemen {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+}
+
+.departemen h2 {
+  color: #333;
+}
+
+.Ilkom, .Fhis {
+  width: 400px;
+  min-height: 550px; 
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Ilkom:hover, .Fhis:hover {
+  background-color: #e3f2fd;
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+
+.Ilkom h2 {
+  color: red;
+}
+
+.Fhis h2 {
+  color: #333;
+}
+
+.Ilkom h4, .Fhis h4 {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.Ilkom p, .Fhis p {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.container-big {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  transition: 0.4s;
+}
+
+
+.form-container h2 {
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 600;
+}
+
+.form-container p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 25px;
+}
+
+.form-container form input,
+.form-container form select {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 15px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  transition: 0.3s;
+  background-color: #f9f9f9;
+  font-size: 14px;
+}
+
+.form-container form input:focus,
+.form-container form select:focus {
+  border-color: #6c63ff;
+  background-color: #fff;
+  outline: none;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 14px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #4f47e7;
+  transform: scale(1.02);
+}
+
+.pengunguman {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.alamat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.alamat img {
+  width: 20px;
+  height: 20px;
+}
+.customer_service {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.customer_service img {
+  width: 20px;
+  height: 20px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email img {
+  width: 20px;
+  height: 20px;
+}
+
+.telepon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.telepon img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ini untuk responsive (arianss) */
+@media (max-width: 768px) {
+  nav ul {
+  display: none;
+  flex-direction: column;
+  background-color: blue;
+  width: 100%;
+  padding: 1rem 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+nav ul.hidden {
+  display: flex;
+}
+
+.hamburger {
+  display: block;
+}
+
+}
+
