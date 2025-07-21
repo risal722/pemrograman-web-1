@@ -21,29 +21,64 @@
     </nav>
 
 <!--     Ini adalah Form Pendaftaran Maba -->
-     <div class="container-big">
-        <div class="form-container">
-          <h2>PMB Handayani 2025</h2>
-          <form action="#">
-            <input type="text" name="nama" placeholder="Nama Lengkap" required />
-            <input type="email" name="email" placeholder="Email Aktif" required />
-            <input type="text" name="nohp" placeholder="Nomor HP / WhatsApp" required />
-            <input type="text" name="alamat" placeholder="Alamat Rumah" required />
-
-            <select name="jurusan" required>
-              <option value="">Pilih Jurusan</option>
-              <option value="Teknik Informatika">Teknik Informatika</option>
-              <option value="Sistem Informasi">Sistem Informasi</option>
-              <option value="Manajemen Informatika">Manajemen Informatika</option>
-              <option value="Hukum">Hukum</option>
-              <option value="Administrasi Publik">Administrasi Publik</option>
-              <option value="Kewirausahaan">Kewirausahaan</option>
+    <div class="form-container">
+        <h2>Pendaftaran Mahasiswa Baru</h2>
+        <form action="#">
+            <h4>Data Pribadi</h4>
+            <input type="text" name="nama" placeholder="Nama Mahasiswa" required>
+            <input type="text" name="tempat" placeholder="Tempat Lahir" required>
+            <input type="date" name="tanggal" required>
+            
+            <select name="jenis_kelamin" required>
+                <option value="">Pilih Jenis Kelamin</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
             </select>
 
-            <button type="submit">Daftar Sekarang</button>
-          </form>
-        </div>
-      </div>
+            <input type="text" name="agama" placeholder="Agama" required>
+            <input type="text" name="negara" placeholder="Negara" required>
+            <input type="text" name="kota" placeholder="Kabupaten / Kota" required>
+            <input type="text" name="provinsi" placeholder="Provinsi" required>
+            <input type="text" name="alamat" placeholder="Alamat" required>
+            <input type="text" name="kodepos" placeholder="Kode Pos" required>
+            <input type="text" name="nohp" placeholder="No. HP" required>
+
+            <h4>Data Orang Tua</h4>
+            <input type="text" name="ayah" placeholder="Nama Ayah" required>
+            <select name="status_ayah">
+                <option value="">Status Ayah</option>
+                <option value="Hidup">Hidup</option>
+                <option value="Meninggal">Meninggal</option>
+            </select>
+
+            <input type="text" name="ibu" placeholder="Nama Ibu" required>
+            <select name="status_ibu">
+                <option value="">Status Ibu</option>
+                <option value="Hidup">Hidup</option>
+                <option value="Meninggal">Meninggal</option>
+            </select>
+
+            <input type="text" name="alamat_ortu" placeholder="Alamat Orang Tua" required>
+            <input type="text" name="nohp_ortu" placeholder="No. HP Orang Tua" required>
+
+            <h4>Program Studi & Fakultas</h4>
+            <select name="prodi" required>
+                <option value="">Pilih Program Studi 1</option>
+                <option value="Teknik Informatika">Teknik Informatika S1</option>
+                <option value="Sistem Komputer">Sistem Komputer S1</option>
+                <option value="Sistem Informasi">Sistem Informasi S1</option>
+                <option value="Pendidikan Teknologi Informasi">Pendidikan Teknologi Informasi S1</option>
+                <option value="Hukum">Hukum S1</option>
+                <option value="Kewirausahaan">Kewirausahaan S1</option>
+                <option value="Manajemen Informatika">Manajemen Informatika D3</option>
+            </select>
+
+            <div class="button-group">
+                <button type="submit">Daftar</button>
+                <button type="reset" class="hapus">Hapus</button>
+            </div>
+        </form>
+    </div>
 <!--end of Pendaftara  -->
   </body>
 </html>
