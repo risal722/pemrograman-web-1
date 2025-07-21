@@ -230,8 +230,8 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: grey;
-  
+  background: url("asset/lll.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .form-container {
