@@ -452,7 +452,6 @@ nav ul.hidden {
 .hamburger {
   display: block;
 }
-
 .galeri {
   padding: 50px 20px;
   background-color: #f0f8ff;
@@ -467,7 +466,7 @@ nav ul.hidden {
 
 .galeri-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom di desktop */
   gap: 20px;
   justify-items: center;
 }
@@ -502,12 +501,14 @@ nav ul.hidden {
   color: #333;
 }
 
+/* Tablet (2 kolom) */
 @media (max-width: 992px) {
   .galeri-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Mobile (1 kolom) */
 @media (max-width: 600px) {
   .galeri-container {
     grid-template-columns: 1fr;
@@ -519,22 +520,22 @@ nav ul.hidden {
 }
 
 
+/* Media Query untuk Mobile dan Tablet */
 @media (max-width: 992px) {
   .galeri-container {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom di tablet */
   }
 }
 
 @media (max-width: 600px) {
   .galeri-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 kolom di hp */
   }
 
   .galeri-item img {
     height: auto;
   }
 }
-  
 .visi-misi-container {
   max-width: 1000px;
   margin: 100px auto;
