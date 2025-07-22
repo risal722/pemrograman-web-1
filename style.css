@@ -86,11 +86,39 @@ span {
     width: auto;
     height: auto;
 }
+.intro {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
 
-.intro{
+.text-intro {
+    text-align: center;
+}
+
+.text-intro h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-intro p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-intro span {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+
+/* .intro{
   width: 60%;
   margin: auto;
-}
+} */
 
 /* ini untuk video */
 .parent {
