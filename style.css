@@ -534,21 +534,29 @@ nav ul.hidden {
     height: auto;
   }
 }
+/* === Visi Misi Section === */
 .visi-misi-container {
   background-color: #f0f9ff;
-  padding: 40px 20px;
-  margin: 40px auto;
-  max-width: 1000px;
+  padding: 60px 30px;
+  margin: 120px auto 60px auto; /* Atas diberi margin agar tidak tertutup navbar */
+  max-width: 1100px;
   border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   border: 2px solid #cce7ff;
+  transition: all 0.3s ease-in-out;
+}
+
+.visi-misi-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 .visi-misi-container h2 {
   text-align: center;
-  font-size: 28px;
-  margin-bottom: 30px;
+  font-size: 32px;
+  margin-bottom: 40px;
   color: #004a99;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .visi-misi-content {
@@ -558,31 +566,61 @@ nav ul.hidden {
 
 .visi-misi-box {
   background-color: #ffffff;
-  padding: 30px;
+  padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
   border: 1px solid #ddd;
   width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .visi-misi-box h3 {
   color: #0073e6;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 24px;
 }
 
 .visi-misi-box p {
   line-height: 1.6;
-  margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 .visi-misi-box ul {
   padding-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .visi-misi-box ul li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   list-style-type: disc;
-  color: #333;
+  color: #444;
+  font-size: 15px;
+}
+
+/* Responsif Mobile */
+@media (max-width: 768px) {
+  .visi-misi-container {
+    padding: 40px 20px;
+    margin-top: 100px;
+  }
+
+  .visi-misi-box {
+    padding: 30px 20px;
+  }
+
+  .visi-misi-container h2 {
+    font-size: 26px;
+  }
+
+  .visi-misi-box h3 {
+    font-size: 20px;
+  }
+
+  .visi-misi-box p,
+  .visi-misi-box ul li {
+    font-size: 14px;
+  }
 }
 
