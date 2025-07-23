@@ -76,8 +76,8 @@ span {
 }
 .gambar-dosen {
   width: 100%;
-  overflow: hidden; /* mencegah scroll horizontal jika ada */
-  display: block;
+  overflow: hidden;
+  margin-top: 80px; /* kompensasi tinggi navbar */
 }
 
 .gambar-dosen img {
