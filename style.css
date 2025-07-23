@@ -76,17 +76,18 @@ nav ul li a:hover {
 span {
   font-weight: bold;
 }
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+.gambar-dosen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
-.logo-uhm {
+.gambar-dosen img {
   max-width: 100%;
-  height: 100%;
-  width: 100%; /* Ukuran default logo di desktop */
+  height: auto;
+  display: block;
 }
 
 .intro {
@@ -637,18 +638,17 @@ nav ul.hidden {
 }
 /*end of media query  */
 /* ini media query untuk gambar dosen */
-
 /* Tablet */
 @media (max-width: 768px) {
-  .logo-uhm {
-    width: 150px;
+  .gambar-dosen img {
+    max-width: 90%;
   }
 }
 
-/* Smartphone */
+/* HP kecil */
 @media (max-width: 480px) {
-  .logo-uhm {
-    width: 120px;
+  .gambar-dosen img {
+    max-width: 85%;
   }
 }
 
