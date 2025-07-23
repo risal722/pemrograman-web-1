@@ -77,15 +77,16 @@ span {
   font-weight: bold;
 }
 .logo-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .logo-uhm {
-    width: auto;
-    height: auto;
-    max-width: 100%;
+  max-width: 100%;
+  height: auto;
+  width: 200px; /* Ukuran default logo di desktop */
 }
 
 .intro {
@@ -636,26 +637,19 @@ nav ul.hidden {
 }
 /*end of media query  */
 /* ini media query untuk gambar dosen */
-  @media (max-width: 768px) {
-    .intro {
-        padding: 30px;
-    }
 
-    .logo-uhm {
-        width: 150px;
-        height: auto;
-    }
+/* Tablet */
+@media (max-width: 768px) {
+  .logo-uhm {
+    width: 150px;
+  }
 }
 
-/* Media Query untuk layar maksimal 480px (smartphone kecil) */
+/* Smartphone */
 @media (max-width: 480px) {
-    .intro {
-        padding: 20px;
-    }
-
-    .logo-uhm {
-        width: 120px;
-        height: auto;
-    }
+  .logo-uhm {
+    width: 120px;
+  }
 }
+
 /* end */
