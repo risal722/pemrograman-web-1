@@ -77,18 +77,18 @@ span {
   font-weight: bold;
 }
 .gambar-dosen {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  width: 100%;
+  overflow: hidden; /* mencegah scroll horizontal jika ada */
+  display: block;
 }
 
 .gambar-dosen img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
+
 
 .intro {
     padding: 50px;
@@ -638,18 +638,15 @@ nav ul.hidden {
 }
 /*end of media query  */
 /* ini media query untuk gambar dosen */
-/* Tablet */
 @media (max-width: 768px) {
   .gambar-dosen img {
-    max-width: 90%;
+     object-fit: contain;
   }
 }
 
-/* HP kecil */
 @media (max-width: 480px) {
   .gambar-dosen img {
-    max-width: 85%;
+    max-height: 300px;
   }
 }
-
 /* end */
