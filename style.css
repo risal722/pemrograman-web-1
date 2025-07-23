@@ -85,6 +85,7 @@ span {
 .logo-uhm {
     width: auto;
     height: auto;
+    max-width: 100%;
 }
 
 .intro {
@@ -634,3 +635,27 @@ nav ul.hidden {
   }
 }
 /*end of media query  */
+/* ini media query untuk gambar dosen */
+  @media (max-width: 768px) {
+    .intro {
+        padding: 30px;
+    }
+
+    .logo-uhm {
+        width: 150px;
+        height: auto;
+    }
+}
+
+/* Media Query untuk layar maksimal 480px (smartphone kecil) */
+@media (max-width: 480px) {
+    .intro {
+        padding: 20px;
+    }
+
+    .logo-uhm {
+        width: 120px;
+        height: auto;
+    }
+}
+/* end */
