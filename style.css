@@ -23,6 +23,11 @@ nav {
   top: 0;
   z-index: 100;
 }
+nav.nav-image img{
+  height :80px;
+  width  :80px
+}
+  
 
 nav .nav-image {
   display: flex;
