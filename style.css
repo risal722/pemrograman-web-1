@@ -637,14 +637,14 @@ nav ul.hidden {
 /*end of media query  */
 /* ini media query untuk gambar dosen */
 @media (max-width: 768px) {
-  .gambar-dosen img {
-     object-fit: contain;
+  .gambar-dosen {
+    margin-top: 70px;
   }
 }
 
 @media (max-width: 480px) {
-  .gambar-dosen img {
-    max-height: 300px;
+  .gambar-dosen {
+    margin-top: 60px;
   }
 }
 /* end */
