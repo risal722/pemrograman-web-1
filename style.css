@@ -85,8 +85,8 @@ span {
 
 .logo-uhm {
   max-width: 100%;
-  height: auto;
-  width: 200px; /* Ukuran default logo di desktop */
+  height: 100%;
+  width: 100%; /* Ukuran default logo di desktop */
 }
 
 .intro {
