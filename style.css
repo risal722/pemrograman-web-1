@@ -23,11 +23,6 @@ nav {
   top: 0;
   z-index: 100;
 }
-nav.nav-image img{
-  height: 40px; 
-  object-fit: contain;
-}
-  
 
 nav .nav-image {
   display: flex;
@@ -35,7 +30,9 @@ nav .nav-image {
   gap: 10px;
 }
 
-
+nav .nav-image img {
+  width: 80px;
+}
 
 nav .nav-image h4 {
   font-family: 'Segoe UI', sans-serif;
