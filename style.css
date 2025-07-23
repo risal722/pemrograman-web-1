@@ -74,17 +74,15 @@ nav ul li a:hover {
 span {
   font-weight: bold;
 }
-.gambar-dosen {
-  width: 100%;
-  overflow: hidden;
-  margin-top: 80px; /* kompensasi tinggi navbar */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.gambar-dosen img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
+.logo-uhm {
+    width: auto;
+    height: auto;
 }
 
 
