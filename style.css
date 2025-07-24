@@ -565,6 +565,7 @@ nav ul.hidden {
 .visi-misi-content {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Agar tidak melar jika ada lebih dari 1 box */
 }
 
 .visi-misi-box {
@@ -572,8 +573,10 @@ nav ul.hidden {
   padding: 30px;
   border-radius: 10px;
   border: 1px solid #cccccc;
+  max-width: 800px;  /* Tambahkan ini agar di desktop tidak terlalu lebar */
   width: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 0 auto; /* Agar tetap di tengah */
 }
 
 .visi-misi-box h3 {
@@ -598,6 +601,9 @@ nav ul.hidden {
   margin-bottom: 8px;
   color: #555;
 }
+
+/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .intro {
     padding: 30px;
@@ -611,6 +617,10 @@ nav ul.hidden {
     font-size: 14px;
     max-width: 100%;
     padding: 0 10px;
+  }
+
+  .visi-misi-box {
+    padding: 20px;
   }
 }
 
@@ -626,6 +636,10 @@ nav ul.hidden {
   .text-intro p {
     font-size: 13px;
     line-height: 1.5;
+  }
+
+  .visi-misi-box {
+    padding: 15px;
   }
 }
 
