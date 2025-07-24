@@ -13,7 +13,6 @@ body {
   
 }
 
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -23,6 +22,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+    
 }
 
 nav .nav-image {
@@ -449,6 +449,7 @@ form-container {
 /* end of footer */
 
 /* ini untuk responsive (arianss) */
+
 @media (max-width: 768px) {
   nav ul {
   display: none;
@@ -462,11 +463,6 @@ form-container {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-.video-container {
-  max-width: 90%;
-}
-
-}
 
 nav ul.hidden {
   display: flex;
@@ -475,6 +471,9 @@ nav ul.hidden {
 .hamburger {
   display: block;
 }
+
+}
+
 .galeri {
   padding: 50px 20px;
   background-color: #f0f8ff;
