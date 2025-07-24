@@ -8,12 +8,9 @@
 }
 
 body {
-  background-image: url('asset/lll.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: skyblue;
   height: 100%;
+  
 }
 
 
