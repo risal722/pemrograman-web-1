@@ -2,8 +2,16 @@ const hamburger = document.getElementById('hamburger');
 const navList = document.getElementById('nav-list');
 
 hamburger.addEventListener('click', () => {
-    navList.classList.toggle('hidden');
+navList.classList.toggle('hidden');
 });
+
+
+// const hamburger = document.getElementById('hamburger');
+// const navList = document.getElementById('nav-list');
+
+// hamburger.addEventListener('click', () => {
+//     navList.classList.toggle('hidden');
+// });
 
 // ini untuk pendaftaran Maba
 const form = document.getElementById('formPendaftaran');
