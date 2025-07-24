@@ -66,12 +66,14 @@ nav ul li a:hover {
 
 /* ini hamburger saya */
 .hamburger {
-  display: none;
-  font-size: 28px;
+  font-size: 30px;
   cursor: pointer;
+  color: white;
+  display: none; /* defaultnya sembunyi */
 }
-
-
+.hidden {
+  display: none;
+}
 span {
   font-weight: bold;
 }
@@ -441,8 +443,24 @@ span {
 /* end of footer */
 
 /* ini untuk responsive (arianss) */
-
 @media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  #nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0000ff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+}
+/* @media (max-width: 768px) {
   nav ul {
   display: none;
   flex-direction: column;
@@ -464,7 +482,7 @@ nav ul.hidden {
   display: block;
 }
 
-}
+} */
 
 .galeri {
   padding: 50px 20px;
