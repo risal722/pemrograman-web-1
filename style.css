@@ -316,8 +316,6 @@ span {
   color: black;
 }
 
-/* end of intro */
-/* ini untuk pendaftaran maba style */
 .form-container {
   width: 500px;
   margin: 50px auto;
@@ -327,6 +325,22 @@ span {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   font-family: 'Segoe UI', sans-serif;
 }
+
+body {
+  background-image: url('asset/lll.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
 
 .form-container h2 {
   text-align: center;
@@ -566,7 +580,7 @@ nav ul.hidden {
 .visi-misi-content {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Agar tidak melar jika ada lebih dari 1 box */
+  flex-wrap: wrap;
 }
 
 .visi-misi-box {
@@ -574,10 +588,10 @@ nav ul.hidden {
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #cccccc;
-  max-width: 800px;  /* Tambahkan ini agar di desktop tidak terlalu lebar */
+  max-width: 800px;
   width: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  margin: 0 auto; /* Agar tetap di tengah */
+  margin: 0 auto;
 }
 
 .visi-misi-box h3 {
@@ -603,7 +617,6 @@ nav ul.hidden {
   color: #555;
 }
 
-/* RESPONSIVE */
 
 @media (max-width: 768px) {
   .intro {
