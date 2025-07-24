@@ -478,7 +478,7 @@ nav ul.hidden {
 
 .galeri-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 kolom di desktop */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-items: center;
 }
@@ -513,14 +513,12 @@ nav ul.hidden {
   color: #333;
 }
 
-/* Tablet (2 kolom) */
 @media (max-width: 992px) {
   .galeri-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile (1 kolom) */
 @media (max-width: 600px) {
   .galeri-container {
     grid-template-columns: 1fr;
@@ -532,16 +530,15 @@ nav ul.hidden {
 }
 
 
-/* Media Query untuk Mobile dan Tablet */
 @media (max-width: 992px) {
   .galeri-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom di tablet */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .galeri-container {
-    grid-template-columns: 1fr; /* 1 kolom di hp */
+    grid-template-columns: 1fr;
   }
 
   .galeri-item img {
@@ -601,7 +598,6 @@ nav ul.hidden {
   margin-bottom: 8px;
   color: #555;
 }
-/*ini media query untuk intro saya  */
 @media (max-width: 768px) {
   .intro {
     padding: 30px;
@@ -632,8 +628,7 @@ nav ul.hidden {
     line-height: 1.5;
   }
 }
-/*end of media query  */
-/* ini media query untuk gambar dosen */
+
 @media (max-width: 768px) {
   .gambar-dosen {
     margin-top: 70px;
@@ -645,4 +640,3 @@ nav ul.hidden {
     margin-top: 60px;
   }
 }
-/* end */
